@@ -6,9 +6,9 @@ export default function PageLayout({
   children: React.ReactNode;
 }) {
   return (
-    <article>
+    <>
       <Jumbotron title="About" />
       <Block as="section">{children}</Block>
-    </article>
+    </>
   );
 }

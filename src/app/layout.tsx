@@ -1,8 +1,12 @@
+import type { Metadata } from "next";
 import { Header, Footer, Providers, MyDrawer } from "@/components";
 import { fontClassName } from "@/styles";
-import { css, cx } from "@styled-system/css";
 import { container } from "@styled-system/patterns";
 import "../styles/globals.css";
+
+export const metadata: Metadata = {
+  title: "Next.js + Park UI Example",
+};
 
 export default function RootLayout({
   children,
