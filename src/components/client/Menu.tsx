@@ -14,10 +14,10 @@ function Menu(props: SegmentGroup.RootProps) {
     <SegmentGroup.Root value={pathname} {...props}>
       {options.map((option) => (
         <SegmentGroup.Item key={option.href} value={option.href}>
-          <SegmentGroup.ItemControl />
-          <SegmentGroup.ItemText>
-            <NextLink href={option.href}>{option.label}</NextLink>
-          </SegmentGroup.ItemText>
+          <NextLink href={option.href}>
+            <SegmentGroup.ItemControl />
+            <SegmentGroup.ItemText>{option.label}</SegmentGroup.ItemText>
+          </NextLink>
         </SegmentGroup.Item>
       ))}
       <SegmentGroup.Indicator />
