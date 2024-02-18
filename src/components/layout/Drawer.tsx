@@ -1,8 +1,8 @@
 import { css } from "@styled-system/css";
 import { MdMenu, MdClose } from "react-icons/md";
 import { Drawer, Button, IconButton } from "../ui";
-import { ColorModeHandler } from "../client";
-import Menu from "./Menu";
+import { ColorModeHandler, Menu } from "../client";
+// import Menu from "./Menu";
 
 function MyDrawer(props: Drawer.RootProps) {
   return (
@@ -36,7 +36,6 @@ function MyDrawer(props: Drawer.RootProps) {
           </Drawer.Body>
           <Drawer.Footer gap="3">
             <ColorModeHandler />
-            <Button>Home</Button>
             <Drawer.CloseTrigger asChild>
               <Button variant="outline">Close</Button>
             </Drawer.CloseTrigger>

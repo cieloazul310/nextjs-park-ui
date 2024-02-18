@@ -1,13 +1,14 @@
 import { css } from "@styled-system/css";
-import { code } from "@styled-system/recipes";
 
 export const Code = (props: React.ComponentProps<"code">) => {
-  const inline = code({ variant: "outline" });
   return (
     <code
       className={css({
         ":not(pre) > &": {
-          ...code.raw({ variant: "outline" }),
+          color: "accent.12",
+          bg: "accent.6/18",
+          px: 1,
+          rounded: "md",
         },
       })}
       {...props}

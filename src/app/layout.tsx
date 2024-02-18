@@ -18,7 +18,16 @@ export default function RootLayout({
       <body className={fontClassName}>
         <Providers>
           <Header />
-          <main className={container({ maxWidth: "6xl" })}>{children}</main>
+          <main
+            className={container({
+              maxWidth: "6xl",
+              display: "flex",
+              flexDirection: "column",
+              gap: 4,
+            })}
+          >
+            {children}
+          </main>
           <MyDrawer />
           <Footer />
         </Providers>

@@ -1,9 +1,13 @@
 import { Jumbotron, Block, Menu } from "@/components";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function PageLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
-      <Jumbotron title="Hello, Park UI" />
+      <Jumbotron title="MDX Preview" />
       <Menu orientation="horizontal" />
       <Block as="article">{children}</Block>
     </>

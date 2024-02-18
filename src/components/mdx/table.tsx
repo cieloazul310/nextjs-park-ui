@@ -1,7 +1,8 @@
+import { article } from "@styled-system/patterns";
 import { Table } from "../ui";
 
 export const MdxTable = (props: React.ComponentPropsWithoutRef<"table">) => {
-  return <Table.Root variant="outline" {...props} />;
+  return <Table.Root className={article()} variant="outline" {...props} />;
 };
 export const Thead = (props: React.ComponentPropsWithoutRef<"thead">) => {
   return <Table.Head {...props} />;

@@ -1,7 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
 import { createPreset } from "@park-ui/panda-preset";
 
-import { globalCss, keyframes, patterns, recipes, semanticTokens, textStyles, tokens, utilities } from "./src/theme";
+import { globalCss, keyframes, layerStyles, patterns, recipes, semanticTokens, textStyles, tokens, utilities } from "./src/theme";
 
 export default defineConfig({
   // Whether to use css reset
@@ -33,6 +33,7 @@ export default defineConfig({
   theme: {
     extend: {
       keyframes,
+      layerStyles,
       semanticTokens,
       recipes,
       textStyles,

@@ -2,7 +2,12 @@ import NextLink from "next/link";
 import { isInternal } from "@/utils";
 import { css, cx } from "@styled-system/css";
 import { RiExternalLinkLine } from "react-icons/ri";
-import { anchor } from "./mdx";
+
+const anchor = css({
+  color: { base: "accent.10", _hover: "accent.9" },
+  textDecoration: { _hover: "underline" },
+  _dark: { color: { base: "accent.11", _hover: "accent.12" } },
+});
 
 function Link({
   children,
