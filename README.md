@@ -28,7 +28,7 @@ Demo
 └── tsconfig.json
 ```
 
-## Referrences
+## References
 
 Next.js - App dir MDX  
 <https://github.com/vercel/next.js/tree/canary/examples/app-dir-mdx>
